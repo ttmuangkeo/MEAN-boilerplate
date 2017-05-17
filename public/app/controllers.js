@@ -1,4 +1,7 @@
-angular.module('somethingCtrls', ['somethingServices'])
+angular.module('myCtrls', ['somethingServices'])
+    .controller('HomeCtrl', ['$scope', function($scope) {
+
+    }])
     .controller('NavCtrl', ['$scope', 'Auth', function($scope, Auth) {
         //5.making the logout option appear. return Auth.isLoggedIn() function.
         $scope.isLoggedIn = function() {

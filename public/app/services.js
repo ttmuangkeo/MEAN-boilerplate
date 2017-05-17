@@ -4,18 +4,18 @@ angular.module('somethingServices', ['ngResource'])
         return {
             saveToken: function(token) {
                 //setting your tokens to whatever name you chose from get.
-                $window.localStorage['secretrecipes-token'] = token;
+                $window.localStorage['secret-token'] = token;
 
             },
             getToken: function() {
                 //retrieve from localstorage
                 //save the token to whatever name you want
-                return $window.localStorage['secretrecipes-token']
+                return $window.localStorage['secret-token']
 
             },
             removeToken: function() {
                 //removeItem is a function. removes the token
-                $window.localStorage.removeItem('secretrecipes-token');
+                $window.localStorage.removeItem('secret-token');
             },
             isLoggedIn: function() {
                 //returns true or false. we can use our getoken function. check localstorage to see if you have token '?'is an else statment

@@ -1,4 +1,4 @@
-var app = angular.module('App', ['ui.router', 'somethingCtrls']);
+var app = angular.module('App', ['ui.router', 'myCtrls']);
 
 app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
         $urlRouterProvider.otherwise('/404');
@@ -7,7 +7,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
             .state('home', {
                 url: '/',
                 templateUrl: 'app/views/home.html',
-
+                controller: 'HomeCtrl'
             })
             .state('signup', {
                 url: '/signup',
